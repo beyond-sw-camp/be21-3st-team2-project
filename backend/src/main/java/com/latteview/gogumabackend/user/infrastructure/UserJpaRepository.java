@@ -1,0 +1,12 @@
+package com.latteview.gogumabackend.user.infrastructure;
+
+import com.latteview.gogumabackend.user.domain.User;
+import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserJpaRepository extends JpaRepository<User, Long> {
+
+  boolean existsByEmail(String email);
+
+  Optional<User> findByEmail(String email);
+}

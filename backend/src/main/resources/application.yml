@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: goguma-backend
+  datasource:
+    url: jdbc:mariadb://dev.macacolabs.site:1636/goguma
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: goguma
+    password: nyamnyam!
+  jwt:
+    secret: 124312893u5yr81923yht589013hy2t02983h
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true #To beautify or pretty print the SQL
+        show_sql: true #show sql
+
+s3:
+  endpoint: http://dev.macacolabs.site:9000
+  access-key: LRIPg8Jnln3yTQN0mSz0
+  secret-key: 6FaBa6flnbpQFjG2mfyQ4Dfv2FHEkUhrX7rpdBpj
+  bucket: goguma
+  region: ap-northeast-2

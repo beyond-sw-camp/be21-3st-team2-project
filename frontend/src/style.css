@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'KarrotSans';
+    src: url('./assets/fonts/KarrotSans-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'KarrotSans', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
+    background-color: #ffffff;
+}
